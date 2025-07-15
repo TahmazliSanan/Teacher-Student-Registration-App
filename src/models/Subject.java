@@ -7,11 +7,6 @@ public class Subject implements Serializable {
     private String pin;
     private String name;
 
-    public Subject(String pin, String name) {
-        this.pin = pin;
-        this.name = name;
-    }
-
     public String getPin() {
         return pin;
     }
