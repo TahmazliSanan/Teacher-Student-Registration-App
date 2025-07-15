@@ -25,6 +25,9 @@ public class Teacher extends Person implements Serializable {
 
     @Override
     public String toString() {
-        return "PIN: " + getPin() + "\nFirst name: " + getFirstName() + "\nLast name: " + getLastName();
+        return "PIN: " + getPin() + "\n" +
+                "First name: " + getFirstName() + "\n" +
+                "Last name: " + getLastName() + "\n" +
+                "Subjects: " + subjects;
     }
 }
