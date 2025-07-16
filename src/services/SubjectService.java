@@ -2,12 +2,11 @@ package services;
 
 import models.Subject;
 import utils.FileUtil;
-import utils.MenuUtil;
 
 import java.util.List;
 import java.util.Scanner;
 
-public class SubjectService extends MenuUtil implements BaseService {
+public class SubjectService implements BaseService {
     @Override
     public void create() {
         System.out.print("Enter the PIN: ");
