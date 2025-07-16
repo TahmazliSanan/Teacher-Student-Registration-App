@@ -9,12 +9,6 @@ public class Student extends Person implements Serializable {
     private double gpa;
     private Teacher teacher;
 
-    public Student(String pin, String firstName, String lastName, double gpa, Teacher teacher) {
-        super(pin, firstName, lastName);
-        this.gpa = gpa;
-        this.teacher = teacher;
-    }
-
     public double getGpa() {
         return gpa;
     }
