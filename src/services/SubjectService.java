@@ -9,17 +9,6 @@ import java.util.Scanner;
 
 public class SubjectService extends MenuUtil implements BaseService {
     @Override
-    public void showOperationMenu() {
-        System.out.println("1.Add subject\n" +
-                "2.Get subject\n" +
-                "3.Get subject list\n" +
-                "4.Update subject\n" +
-                "5.Delete subject\n" +
-                "6.Exit system");
-        System.out.print("Select operation: ");
-    }
-
-    @Override
     public void create() {
         System.out.print("Enter the PIN: ");
         String pin = new Scanner(System.in).nextLine();
