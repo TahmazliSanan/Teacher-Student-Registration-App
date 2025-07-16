@@ -22,6 +22,7 @@ public class Teacher extends Person implements Serializable {
     public String toString() {
         return "PIN: " + getPin() + "\n" +
                 "First name: " + getFirstName() + "\n" +
-                "Last name: " + getLastName();
+                "Last name: " + getLastName() + "\n" +
+                "Subjects: " + subjects;
     }
 }
