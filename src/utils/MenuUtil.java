@@ -48,8 +48,8 @@ public class MenuUtil {
     }
 
     public void showServiceMenu(BaseService subjectService,
-                                       BaseService teacherService,
-                                       BaseService studentService) {
+                                BaseService teacherService,
+                                BaseService studentService) {
         while (true) {
             System.out.println("\n=== MAIN MENU ===");
             System.out.println("1.Subject Menu");
