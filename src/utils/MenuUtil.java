@@ -4,7 +4,13 @@ import services.BaseService;
 
 import java.util.Scanner;
 
-public abstract class MenuUtil {
+public class MenuUtil {
+    private final Scanner scanner;
+
+    public MenuUtil(Scanner scanner) {
+        this.scanner = scanner;
+    }
+
     public void showOperationMenu(String title, BaseService service) {
         while (true) {
             System.out.println("=== " + title.toUpperCase() + " MENU ===");
@@ -16,7 +22,7 @@ public abstract class MenuUtil {
             System.out.println("6.Back");
             System.out.print("Choose an operation: ");
 
-            int operationNumber = new Scanner(System.in).nextInt();
+            int operationNumber = scanner.nextInt();
 
             switch (operationNumber) {
                 case 1:
@@ -52,7 +58,7 @@ public abstract class MenuUtil {
             System.out.println("4.Exit");
             System.out.print("Choose an menu: ");
 
-            int serviceNumber = new Scanner(System.in).nextInt();
+            int serviceNumber = scanner.nextInt();
 
             switch (serviceNumber) {
                 case 1:
