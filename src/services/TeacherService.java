@@ -133,7 +133,7 @@ public class TeacherService implements BaseService {
         }
 
         if (!exists) {
-            System.out.println("Subject not found!");
+            System.out.println("Teacher not found!");
         }
     }
 
@@ -143,7 +143,7 @@ public class TeacherService implements BaseService {
         String searchedPin = new Scanner(System.in).nextLine();
 
         List<Teacher> teachers = FileUtil.readObjectFromFile("teachers.obj");
-        boolean removed = teachers.removeIf(subject -> searchedPin.equals(subject.getPin()));
+        boolean removed = teachers.removeIf(teacher -> searchedPin.equals(teacher.getPin()));
 
         if (removed) {
             FileUtil.writeObjectToFile("teachers.obj", teachers);
