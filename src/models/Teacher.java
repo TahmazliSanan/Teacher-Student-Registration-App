@@ -9,11 +9,6 @@ public class Teacher extends Person implements Serializable {
     private static final long serialVersionUID = 1L;
     private List<Subject> subjects;
 
-    public Teacher(String pin, String firstName, String lastName, List<Subject> subjects) {
-        super(pin, firstName, lastName);
-        this.subjects = subjects;
-    }
-
     public List<Subject> getSubjects() {
         return subjects;
     }
@@ -27,7 +22,6 @@ public class Teacher extends Person implements Serializable {
     public String toString() {
         return "PIN: " + getPin() + "\n" +
                 "First name: " + getFirstName() + "\n" +
-                "Last name: " + getLastName() + "\n" +
-                "Subjects: " + subjects;
+                "Last name: " + getLastName();
     }
 }
