@@ -8,12 +8,6 @@ public abstract class Person implements Serializable {
     private String firstName;
     private String lastName;
 
-    public Person(String pin, String firstName, String lastName) {
-        this.pin = pin;
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-
     public String getPin() {
         return pin;
     }
