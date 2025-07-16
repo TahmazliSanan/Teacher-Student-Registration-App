@@ -19,7 +19,6 @@ public class FileUtil {
     public static <T> List<T> readObjectFromFile(String filename) {
         File file = new File(filename);
         if (!file.exists()) {
-            System.out.println("File not found!");
             return new ArrayList<>();
         }
         try (ObjectInputStream ois = new ObjectInputStream(Files.newInputStream(Paths.get(filename)))) {
